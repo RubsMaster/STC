@@ -1,0 +1,27 @@
+.navbar{
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: 100px;
+
+}
+.nav-link {
+    color: #1a1a1a;
+    margin-right: 15px;
+
+}
+
+.logo-empresa{
+    min-width: 135px;
+    max-width: 170px;
+    margin-left: 140px;
+}
+.container{
+    height: auto;
+    width: auto;
+}
+body{
+    background-color:#242424 !important;
+}
+header{
+    text-align: center;
+}
