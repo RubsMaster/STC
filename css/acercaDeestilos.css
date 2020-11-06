@@ -7,6 +7,9 @@
 #parrafo2{
     color: whitesmoke;
 }
+#parrafo3{
+    color: whitesmoke;
+}
 .navbar{
     background-color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -26,4 +29,8 @@
 }
 body{
     background-color: #242424;
+}
+footer{
+    color: whitesmoke;
+    padding-bottom: 1px;
 }
