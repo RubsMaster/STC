@@ -23,7 +23,9 @@
             <div class="col-md-12">
                 <div class="card">
                     <header class="card-header">
-                        <h4 class="card-title mt-2">Registrar</h4>
+                        <center>
+                            <h4 class="card-title mt-2">Cotizar</h4>
+                        </center>
                     </header>
                     <article class="card-body">
                         <form>
@@ -55,10 +57,11 @@
                                         <option> Pantalla</option>
                                         <option> Batería</option>
                                     </select>
-                                </div>
+                                </div>                                
                             </div>
+                        </form>
                         <!-- Dropdown lists fin -->
-                        <button type="button" name="cotizar" class="btn btn-secondary btn-sm col-md-12">Cotizar</button>
+                        <button type="button" name="cotizar" class="btn btn-secondary btn-lg col-md-12">Cotizar</button>
                 </div>
             </div>
             
@@ -66,7 +69,7 @@
         
     </div>
         
-        </form>
+        
         
         <!-- Footer -->
         <footer class='page-footer font-small bg-dark pt-4'>

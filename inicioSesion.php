@@ -11,9 +11,9 @@
 
     <header>
     <?php
-          require_once('header.php');
-       ?>
-     </header>
+        require_once('header.php');
+    ?>
+    </header>
         <!--Login-->
         <div class="container">
             <div class="row">
@@ -36,17 +36,19 @@
                         <button class="btn btn-lg btn-dark btn-block" type="submit">Iniciar Sesión</button>
                         <hr class="my-4">
                         <label for="registrate">¿Aún no tienes cuenta?</label>
-                        <a href="registrar.html" class="btn btn-secondary btn-sm" role="button" aria-pressed="true">Registrar</a>                    
+                        <a href="registrar.php" class="btn btn-secondary btn-sm" role="button" aria-pressed="true">Registrar</a>                    
                     </form>
                     </div>
                 </div>
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-<footer class="page-footer font-small bg-dark pt-4">
-  
-  </footer>
+        <!--footer-->
+    <footer class='page-footer font-small bg-dark pt-4' >
+        <?php
+            require_once ('footer.php')
+        ?>
+    </footer>
         <!--js-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

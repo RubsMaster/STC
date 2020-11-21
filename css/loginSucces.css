@@ -15,12 +15,8 @@
     max-width: 170px;
     margin-left: 140px;
 }
-.container{
-    height: auto;
-    width: auto;
-}
 body{
-    background-color:#242424 !important;
+    background-color:#242424;
 }
 footer{
     color: whitesmoke !important;
