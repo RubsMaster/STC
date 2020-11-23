@@ -25,17 +25,22 @@
                         <h4 class="card-title mt-2">Registrar</h4>
                     </header>
                     <article class="card-body">
-                        <form class="registro" action="signupSucces.php" method="POST">
+                        <form class="registro" action="#" method="POST">
+
+                            <?php
+                            require_once('signupSucces.php');
+                            ?>
+
                             <div class="form-row">
                                 <!-- Nombres del usuario -->
                                 <div class="col form-group">
                                     <label>Nombre(s)</label>
-                                    <input name="nombre"type="text" class="form-control" placeholder="">
+                                    <input name="name"type="text" class="form-control" placeholder="" value="<?php echo $name; ?>">
                                 </div> 
                                 
                                 <div class="col form-group">
                                     <label>Apellido(s)</label>
-                                    <input name="lastname" type="text" class="form-control" placeholder=" ">
+                                    <input name="lastname" type="text" class="form-control" placeholder=" " value="<?php echo $lastname; ?>">
                                 </div> 
                             </div> 
                                 <!-- fin Nombres del usuario -->
@@ -43,60 +48,40 @@
                                 <!-- Correo -->
                             <div class="form-group">
                                 <label>Correo electrónico</label>
-                                <input type="email" class="form-control" placeholder="" name="usuario">
-                                <small class="form-text text-muted">No se enviarán mensajes muplicitarios.</small>
+                                <input type="email" class="form-control" placeholder="" name="email" value="<?php echo $email; ?>">
+                                <small class="form-text text-muted">No se enviarán mensajes publicitarios.</small>
                             </div> 
                                 <!-- fin Correo -->
 
-                                <!-- Sexo -->
-                            <div class="form-group">
-
-                                <label class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" value="option1">
-                                    <span class="form-check-label"> Hombre </span>
-                                </label>
-
-                                <label class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" value="option2">
-                                    <span class="form-check-label"> Mujer</span>
-                                </label>
-
-                            </div> 
-                                <!-- fin Sexo -->
 
                                 <!-- Locacion -->
                             <div class="form-row">
-                                
-                                <div class="form-group col-md-6">
-                                    <label>Ciudad</label>
-                                    <input type="text" class="form-control" name="ciudad">
-                                </div> 
-
                                 <div class="form-group col-md-6">
                                     <label>Estado</label>
-                                    <select id="inputState" class="form-control" name="estado">
-                                        <option> Seleccionar...</option>
-                                        <option selected="">Chihuahua</option>
+                                    <select id="inputState" class="form-control" name="state">
+                                        <option value=""> Seleccionar...</option>
+                                        <option value="cuu" <?php if($state == 'cuu') echo "selected"?>>Chihuahua</option>
+                                        <option value="son" <?php if($state == 'son') echo "selected"?>>Sonora</option>
                                     </select>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label>Ciudad</label>
+                                    <input type="text" class="form-control" name="city" value="<?php echo $city; ?>">
                                 </div>
                                 <!-- fin Locacion-->
 
                                 <!-- Contrasena-->
                                 <div class="form-group col-md-6">
                                     <label>Crear contrasña</label>
-                                    <input class="form-control" type="password" name="contra">
-                                </div>
-                                
-                                <div class="form-group col-md-6">
-                                    <label>Confirmar contraseña</label>
-                                    <input class="form-control" type="password" name="recontra">
+                                    <input class="form-control" type="password" name="pass1">
                                 </div>
                                 <!-- fin contrasena -->
 
                             </div>
                             <!-- boton -->
                             <div class="form-group">
-                                <input type="submit" name="registrar" bv="registrar" class="btn btn-dark btn-block"></input>
+                                <input type="submit" name="register" bv="registrar" class="btn btn-dark btn-block"></input>
                             </div> 
                             <!-- fin Boton -->
                         </form>
