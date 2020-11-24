@@ -28,7 +28,7 @@
                         </center>
                     </header>
                     <article class="card-body">
-                        <form action="">
+                        <form>
                             <!-- Dropdown lists inicio-->
                             <div class="form-row">
                                 <!-- Dropdown list Modelo -->
