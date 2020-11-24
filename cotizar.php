@@ -1,3 +1,0 @@
-<?php
-    $modelo = $_POST['']
-?>

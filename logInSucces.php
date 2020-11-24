@@ -12,12 +12,10 @@ if (!$query) {
     echo mysqli_error($mysqli);
 }
 
-if ($email = mysqli_fetch_assoc($query) && $pass1 = mysqli_fetch_assoc($query)) {
+if ($email = mysqli_fetch_assoc($query)) {
     header("location: home.php");
 } else {
     header("location: index.php");
-    // colocar mensaje contrasena incorrecta
-
 }
 
 

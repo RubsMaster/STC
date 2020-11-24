@@ -85,7 +85,7 @@
                             </div> 
                             <!-- fin Boton -->
                         </form>
-                    </article> 
+                    </article> <
                     <div class="border-top card-body text-center">¿Ya tienes cuenta? <a href="index.php">Inicia sesión</a></div>
                 </div> 
             </div> 

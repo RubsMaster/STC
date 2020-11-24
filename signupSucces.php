@@ -63,7 +63,7 @@ if (isset($_POST['name'])) {
 
         echo "<div class='alert alert-success'>
                                                 Registro exitoso!";
-        //header('Location: signUp.php');
+        header('Location: signUp.php');
 
     }
     echo "</div>";
