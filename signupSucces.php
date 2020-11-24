@@ -1,5 +1,7 @@
 <?php
-require_once('conexion.php');
+require_once('connect.php');
+
+
 $name = "";
 $lastname = "";
 $email = "";
@@ -57,12 +59,16 @@ if (isset($_POST['name'])) {
             die("Error al insertar los datos" . $conexion->error);
         }
 
+
+
         echo "<div class='alert alert-success'>
                                                 Registro exitoso!";
-        header('Location: registrar.php');
+        header('Location: signUp.php');
 
     }
     echo "</div>";
+
+
 }
 
 ?>

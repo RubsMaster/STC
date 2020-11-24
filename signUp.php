@@ -48,7 +48,7 @@
                                 <!-- Correo -->
                             <div class="form-group">
                                 <label>Correo electrónico</label>
-                                <input type="email" class="form-control" placeholder="" name="email" value="<?php echo $email; ?>">
+                                <input type="email" class="form-control" placeholder="exemple@domain.com" name="email" value="<?php echo $email; ?>">
                                 <small class="form-text text-muted">No se enviarán mensajes publicitarios.</small>
                             </div> 
                                 <!-- fin Correo -->
@@ -72,7 +72,7 @@
                                 <!-- fin Locacion-->
 
                                 <!-- Contrasena-->
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-12">
                                     <label>Crear contrasña</label>
                                     <input class="form-control" type="password" name="pass1">
                                 </div>
@@ -86,7 +86,7 @@
                             <!-- fin Boton -->
                         </form>
                     </article> <
-                    <div class="border-top card-body text-center">¿Ya tienes cuenta? <a href="inicioSesion.php">Inicia sesión</a></div>
+                    <div class="border-top card-body text-center">¿Ya tienes cuenta? <a href="index.php">Inicia sesión</a></div>
                 </div> 
             </div> 
         </div> 
