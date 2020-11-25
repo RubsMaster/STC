@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +52,8 @@
           <img src="img/6.jpg" class="d-block w-100" alt="...">          
         </div>
         <div class="carousel-item">
-          <img src="img/7.jpg" class="d-block w-100" alt="...">          
+          <img src="img/7.jpg" class="d-block w-100" alt="...">
+
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -54,7 +62,6 @@
       </a>
       <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
       </a>
     </div>
   </div>
