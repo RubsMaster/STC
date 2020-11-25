@@ -31,17 +31,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcbc6b66-be2d-41ac-b3b8-3197eb05b6a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logInSucces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acercaDe.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cotizador.php" beforeDir="false" afterPath="$PROJECT_DIR$/quote.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropdown.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/logOut.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inicioSesion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registrar.php" beforeDir="false" afterPath="$PROJECT_DIR$/signUp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signupSucces.php" beforeDir="false" afterPath="$PROJECT_DIR$/signupSucces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logInSucces.php" beforeDir="false" afterPath="$PROJECT_DIR$/logInSucces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quote.php" beforeDir="false" afterPath="$PROJECT_DIR$/quote.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/signUp.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +72,7 @@
       <updated>1606176020901</updated>
       <workItem from="1606176022005" duration="3519000" />
       <workItem from="1606185104921" duration="4182000" />
+      <workItem from="1606273984663" duration="2976000" />
     </task>
     <servers />
   </component>
@@ -93,9 +92,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1114" y="443" key="NewPhpFileDialog" timestamp="1606176447315">
+    <state x="1114" y="443" key="NewPhpFileDialog" timestamp="1606275256008">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1114" y="443" key="NewPhpFileDialog/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1606176447315" />
+    <state x="1114" y="443" key="NewPhpFileDialog/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1606275256008" />
   </component>
 </project>

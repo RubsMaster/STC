@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
     $server = "localhost";
@@ -12,18 +11,3 @@
         die("Conexion Fallida" . $conexion-> connect_error);
     }
 ?>
-=======
-<?php
-
-    $server = "localhost";
-    $user = "root";
-    $password = "";
-    $db = "integradora";
-
-    $conexion = new mysqli($server, $user, $password, $db);
-
-    if($conexion -> connect_error){
-        die("Conexion Fallida" . $conexion-> connect_error);
-    }
-?>
->>>>>>> feature/register

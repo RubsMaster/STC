@@ -3,8 +3,13 @@ session_start();
 
 require_once 'connect.php';
 
+$email = "";
 $email = $_POST['user'];
 $pass1 = $_POST['pass1'];
+
+
+    $_SESSION['user'] = $email;
+
 
 $query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE email = '$email' AND pass1 = '$pass1'");
 if (!$query) {
