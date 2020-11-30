@@ -13,72 +13,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-<link rel="stylesheet" href="css/custom.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style type="text/css">
-
-body{
-    font: 14px sans-serif;
-    text-align: center;
-}
-
-</style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/headerStyle.css">
+    <link rel="stylesheet" href="css/footerStyle.css">
 </head>
 <body>
-    <div class = "container">
-        <div class = "page-header"> 
-            <h1>Hola, <b>
-                <?php echo htmlspecialchars($_SESSION["username"]); ?>
-            </b>. Bienvenid@ a nuestra tienda </h1>
-        </div>
-        <div class="table-wrapper">
-<div class="table-title">
-<div class="row">
-<div class="col-sm-6">
-<h2>Administrar <b>Productos</b></h2>
-</div>
-<div class="col-sm-6">
-<a href="#addProductModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Agregar nuevo producto</span></a>
-</div>
-</div>
-</div>
-<div class='col-sm-4 pull-right'>
-<div id="custom-search-input">
-<div class="input-group col-md-12">
-<input type="text" class="form-control" placeholder="Buscar" id="q" onkeyup="load(1);" />
-<span class="input-group-btn">
-<button class="btn btn-info" type="button" onclick="load(1);">
-<span class="glyphicon glyphicon-search"></span>
-</button>
-</span>
-</div>
-</div>
-</div>
-<div class='clearfix'></div>
-<hr>
-<div id="loader"></div><!-- Carga de datos ajax aqui -->
-<div id="resultados"></div><!-- Carga de datos ajax aqui -->
-<div class='outer_div'></div><!-- Carga de datos ajax aqui -->
-</div>
-</div>
-<!-- Edit Modal HTML -->
-<?php include("html/modal_add.php");?>
-<!-- Edit Modal HTML -->
-<?php include("html/modal_edit.php");?>
-<!-- Delete Modal HTML -->
-<?php include("html/modal_delete.php");?>
-<script src="js/script.js"></script>
-        <p>
-            <a class="btn btn-danger" href="logout.php">salir</a>
-        </p>
-    </div>
+    <header>
+        <?php
+            include('includes/header.php');
+        ?>
+    </header>
+
+    <?php
+        include('config.php');
+    ?>
+
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">ID Orden</th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Email</th>
+                <th scope="col">Estado</th>
+            </tr>
+        </thead>
+        <?php
+            $sql="SELECT * FROM ordenes";
+            $result=mysqli_query($con,$sql);
+            while($mostrar=mysqli_fetch_array($result)){
+                ?>
+            
+        <tbody>
+            <tr>
+                <td><?php echo $mostrar['id_orden']?></th>
+                <td><?php echo $mostrar['usuario']?></td>
+                <td><?php echo $mostrar['email']?></td>
+                <td><?php echo $mostrar['estado']?></td>
+            </tr>
+            <?php
+            }
+            ?>
+        </tbody>
+
+        </table>
+        
+    <footer class='page-footer font-small bg-dark pt-4'>
+        <?php
+            include('includes/footer.php');
+        ?>
+    </footer>
 </body>
-
-
 </html>

@@ -26,6 +26,7 @@
         include('includes/header.php');
         ?>
     </header>
+    
     <div class="container" style="padding-top: 20px;">
         <div class="row justify-content-center">
             <div class="col-md-12">
@@ -67,8 +68,9 @@
                                     </select>
                                 </div>                                
                             </div>
+                            <button type="submit" name="cotizar" class="btn btn-secondary btn-lg col-md-12">Cotizar</button>
                         </form>
-                        <button type="button" name="cotizar" class="btn btn-secondary btn-lg col-md-12">Cotizar</button>
+                        
                     </article>    
                 </div>
             </div>
@@ -76,6 +78,7 @@
         </div>
         
     </div>
+    
     <footer class='page-footer font-small bg-dark pt-4'>
         <?php
             include('includes/footer.php');

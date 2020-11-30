@@ -28,7 +28,7 @@
     </header>
     <!--Informacion-->
     <div class="container bg-secondary" id="parrafo1">
-        <h1>Who we are and what we do?</h1>
+        <h1>Who we are and what we do</h1>
         <p>Servicio Técnico Celular (STC) It's a company found in 2017 by Rubén Soto, Kevin Sandoval and Hugo Luján dedicated to offer a repairing service of mobile phone devices in multiple municipalities the state of Chihuahua, Mexico.</p>
         <p>We count with technical staff highly trained, STC offers a wide range on reparation service; Software and Hardware.</p>
         <p>due to the service we provide, we can offer our service for any brand of cell phones.</p>
@@ -39,7 +39,7 @@
             <ul>
                 <li>USB power/Accesory connector</li>
                 <li>Buttons reparation (turn on button, volume button and home button)</li>
-                <li>microphones.</li>
+                <li>Microphones.</li>
                 <li>Broken/damaged screen reparation</li>
                 <li>Change of spare parts (Buzzers,generic screens, touch screens, bateries, etc)</li>
             </ul>

@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if ($_SESSION["username"] == "admin"){
+        header("location: welcome.php");
+    }
         if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         header("location:index.php");
