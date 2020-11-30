@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordenar</title>
+    <title>Order</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@
 <body>
     <header>
         <?php
-        include_once('includes/header.php');
+        include_once('includes/eng_header.php');
         ?>
     </header>
     
@@ -53,14 +53,14 @@
             <center>
                 <div class='container'>
                     <div class='alert alert-success' role='alert mb-3'>
-                        <h1 class='alert-heading'>¡Orden realizada con éxito!</h1>
-                        <p>Tu id de seguimiento es:</p>
+                        <h1 class='alert-heading'>Order made succesfully!</h1>
+                        <p>Your track ID is: </p>
                         <h1><b>".$row['id_orden']."</b></h1>
-                        <p>El Email para rastreo es:</p>
+                        <p>Your track E-Mail is: </p>
                         <h2><b>".$email."</b></h2>
                         <hr>
-                        <p class='mb-0'>Si deseas rastrear tu orden de reparación, da clic en el botón.</p>
-                        <a href ='tracking.php'><button type='button' class='btn btn-secondary btn-lg btn-block'>Rastrear</button></a>
+                        <p class='mb-0'>If you want to track your order, click the button.</p>
+                        <a href ='eng_tracking.php'><button type='button' class='btn btn-secondary btn-lg btn-block'>Track</button></a>
                     </div>
                 </div>
             </center>";
@@ -72,14 +72,14 @@
     
         <div class="container mb-3">
             <div class="card">
-                <h5 class="card-header">Resumen de orden</h5>
+                <h5 class="card-header">Order resume</h5>
                 <div class="card-body">
-                    <p class="card-text"><b>Nombre de usuario: </b><?php echo $usuario ?></p>
-                    <p class="card-text"><b>Nombre (s): </b><?php echo $nom1 ?> <?php echo $nom2 ?></p>
-                    <p class="card-text"><b>Apellido (s): </b><?php echo $ape1 ?> <?php echo $ape2 ?></p>
-                    <p class="card-text"><b>Contacto: </b> <?php echo $tel ?></p>
-                    <p class="card-text"><b>Modelo solicitado: </b><?php echo $modelo1?></p>
-                    <p class="card-text"><b>Reparacion solicitada: </b><?php echo $repa1?></p>
+                    <p class="card-text"><b>Username: </b><?php echo $usuario ?></p>
+                    <p class="card-text"><b>Name (s): </b><?php echo $nom1 ?> <?php echo $nom2 ?></p>
+                    <p class="card-text"><b>Last name (s): </b><?php echo $ape1 ?> <?php echo $ape2 ?></p>
+                    <p class="card-text"><b>Contact: </b> <?php echo $tel ?></p>
+                    <p class="card-text"><b>Model order: </b><?php echo $modelo1?></p>
+                    <p class="card-text"><b>Repair order: </b><?php echo $repa1?></p>
                 </div>
             </div>
         </div>

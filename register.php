@@ -113,36 +113,38 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             include('includes/header.php');
         ?>
     </header>
-    <div class="d-flex align-items-center main-container">
-        <div class="container d-flex justify-content-center">
-            <div class="card p-4 text-center" style="min-width: 400px">
-                <h2>Registro</h2>
-                <p>Llena este formulario para registrarte</p>
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                    <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                        <label>Nombre de usuario</label>
-                        <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                        <span class="help-block"><?php echo $username_err; ?></span>
-                    </div>    
-                    <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                        <label>Contraseña</label>
-                        <input type="password" name="password" class="form-control">
-                        <span class="help-block"><?php echo $password_err; ?></span>
-                    </div>
-                    <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-                        <label>Confirmar contraseña</label>
-                        <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
-                        <span class="help-block"><?php echo $confirm_password_err; ?></span>
-                    </div>
-                    <div class="form-group">
-                    <input type="submit" class="btn btn-primary" value="Enviar">
-                    <input type="reset" class="btn btn-default" value="Restablecer">
-                    </div>
-                    <p>¿Ya tienes una cuenta? <a href="index.php">Iniciar sesión</a>.</p>
-                </form>   
-            </div>  
+    <center>
+        <div class="d-flex align-items-center main-container" style="padding-bottom: 20px; padding-top: 20px;">
+            <div class="container d-flex justify-content-center">
+                <div class="card p-4 text-center" style="min-width: 400px">
+                    <h2>Registro</h2>
+                    <p>Llena este formulario para registrarte</p>
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                        <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                            <label>Nombre de usuario</label>
+                            <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                            <span class="help-block"><?php echo $username_err; ?></span>
+                        </div>    
+                        <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                            <label>Contraseña</label>
+                            <input type="password" name="password" class="form-control">
+                            <span class="help-block"><?php echo $password_err; ?></span>
+                        </div>
+                        <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+                            <label>Confirmar contraseña</label>
+                            <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
+                            <span class="help-block"><?php echo $confirm_password_err; ?></span>
+                        </div>
+                        <div class="form-group">
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                        <input type="reset" class="btn btn-default" value="Restablecer">
+                        </div>
+                        <p>¿Ya tienes una cuenta? <a href="index.php">Iniciar sesión</a>.</p>
+                    </form>   
+                </div>  
+            </div>
         </div>
-    </div>
+    </center>
     <footer class='page-footer font-small bg-dark pt-4'>
         <?php
             include('includes/footer.php');

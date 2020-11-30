@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark align-items-center">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark align-items-center mb-3">
     <a class="navbar-brand" href="eng_home.php"><img src="img/STC.png" class="logo-empresa" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +17,7 @@
                     aria-haspopup="true" aria-expanded="false">Services</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="eng_quote.php">Quote</a>
-                    <a class="dropdown-item" href="#">Repair Tracking</a>
+                    <a class="dropdown-item" href="eng_tracking.php">Repair Tracking</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"

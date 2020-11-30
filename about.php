@@ -28,14 +28,14 @@
         ?>
     </header>
     <!--Informacion-->
-    <div class="container bg-dark" id="parrafo1">
+    <div class="container bg-dark mb-3" id="parrafo1" style="padding-top: 20px;">
         <h1>¿Quienes somos?</h1>
         <p>Servicio Técnico Celular (STC) es una empresa fundada en 2017 por Rubén Soto, Kevin Sandoval y Hugo Luján dedicada a ofrecer el servicio de reparación de telefonía celular en diversos municipops dentro del estado de Chihuahua, México.</p>
         <p>Contando con técnicos altamente capacitados, STC ofrece una amplia gama de servicios para ambas ramas de reparación; Software y Hardware.</p>
         <p>Gracias al nivel de preparación que tenemos, podemos ofrecer el servicio para cualquier marca de celulares.</p>
     </div>
-    <div class="container bg-dark" id="parrafo2">
-        <h2>Hardware</h2>
+    <div class="container bg-dark mb-3" id="parrafo2" >
+        <h2 style="text-align: center;">Hardware</h2>
         <p>
             <ul>
                 <li>Centro de carga.</li>
@@ -46,8 +46,8 @@
             </ul>
         </p>
     </div>
-    <div class="container bg-dark" id="parrafo3">
-        <h2>Software</h2>
+    <div class="container bg-dark mb-3" id="parrafo3">
+        <h2 style="text-align: center;">Software</h2>
         <p>
             <ul>
                 <li>Liberación de compañía</li>
@@ -59,11 +59,12 @@
             </ul>
         </p>
     </div>
-    <div class="container bg-dark" id="parrafo4">
+    <!--
+    <div class="container bg-dark mb-3" id="parrafo4">
         <center>
-            <h1>Sucursales autorizadas</h1>
+            <h1 style="color: whitesmoke;">Sucursales autorizadas</h1>
 
-            <div class="container">
+            <div class="container" style="padding-bottom: 20px; padding-top: 20px;">
                 <div class="row">
                     <div class="col-sm mb-3 mb-md-0">
                         <div class="card" style="width: 18rem;">
@@ -120,7 +121,7 @@
             </div>
         </center>
     </div>
-
+-->
 
     <footer class='page-footer font-small bg-dark pt-4'>
         <?php

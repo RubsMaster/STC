@@ -1,4 +1,7 @@
 footer{
     color: whitesmoke;
-    padding-bottom: 1px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width: 100%;
 }

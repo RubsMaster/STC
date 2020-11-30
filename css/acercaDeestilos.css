@@ -1,13 +1,16 @@
 #parrafo1{
     color: whitesmoke;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 #parrafo2{
     color: whitesmoke;
 }
 #parrafo3{
+    color: whitesmoke;
+}
+#parrafo4{
     color: whitesmoke;
 }
 .navbar{
