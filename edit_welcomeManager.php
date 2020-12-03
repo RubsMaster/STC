@@ -17,8 +17,4 @@
         $resul=mysqli_query($con,$sql);
         header('location: welcome.php');
     }
-
-   /* $sql="UPDATE ordenes SET estado = '$status'";
-    $resul=mysqli_query($con,$sql);
-    echo $resul['estado'];*/
 ?>

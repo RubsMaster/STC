@@ -64,7 +64,7 @@
     
     <footer class='page-footer font-small bg-dark pt-4'>
         <?php
-            include('includes/footer.php');
+            include('includes/eng_footer.php');
         ?>
     </footer>
     <!-- JS -->

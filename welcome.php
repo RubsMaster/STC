@@ -33,13 +33,13 @@
         include('config.php');
     ?>
     <div class="container mb-3">
-    <div class="card">        
-        <div class="container">
-            <form action="welcomeManager.php" method="post">
+        <div class="card">        
             <div class="container">
-            <label>ID a editar: </label>
-            <input type="text" name="aidi">
-        </div>
+                <form action="edit_welcomeManager.php" method="post">
+                    <div class="container">
+                        <label>ID a editar: </label>
+                        <input type="text" name="aidi">
+                    </div>
                 <label>Modificar estado: </label>
                 <select name="status" class="form-control">
                     <option value="Pendiente"""> Pendiente</option>
@@ -47,9 +47,20 @@
                     <option value="Listo para la entrega"> Listo para la entrega</option>
                 </select>
                 <input type="submit">
-            </form>
+                </form>
+            </div>
         </div>
     </div>
+    <div class="container mb-3">
+        <div class="card">
+            <form action="delete_welcomeManager.php" method="post">
+                <div class="container">
+                    <label>ID a eliminar</label>
+                    <input type="text" name="delId">
+                    <input type="submit" value="Eliminar">
+                </div>
+            </form>
+        </div>
 
     </div>
     

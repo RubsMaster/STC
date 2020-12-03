@@ -18,7 +18,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/headerStyle.css">
-    <link rel="stylesheet" href="css/footerStyle.css">
+    <link rel="stylesheet" href="css/homeFooter.css">
+    <link rel="stylesheet" href="css/acercaDeestilos.css">
 </head>
 <body>
     <header>
@@ -27,14 +28,14 @@
         ?>
     </header>
     <!--Informacion-->
-    <div class="container bg-secondary" id="parrafo1">
+    <div class="container bg-dark" id="parrafo1">
         <h1>Who we are and what we do</h1>
         <p>Servicio Técnico Celular (STC) It's a company found in 2017 by Rubén Soto, Kevin Sandoval and Hugo Luján dedicated to offer a repairing service of mobile phone devices in multiple municipalities the state of Chihuahua, Mexico.</p>
         <p>We count with technical staff highly trained, STC offers a wide range on reparation service; Software and Hardware.</p>
         <p>due to the service we provide, we can offer our service for any brand of cell phones.</p>
     </div>
-    <div class="container bg-secondary" id="parrafo2">
-        <h2>Hardware</h2>
+    <div class="container bg-dark" id="parrafo2">
+        <h2 style="text-align: center;">Hardware</h2>
         <p>
             <ul>
                 <li>USB power/Accesory connector</li>
@@ -45,8 +46,8 @@
             </ul>
         </p>
     </div>
-    <div class="container bg-secondary" id="parrafo3">
-        <h2>Software</h2>
+    <div class="container bg-dark" id="parrafo3">
+        <h2 style="text-align: center;">Software</h2>
         <p>
             <ul>
                 <li>Company release</li>
